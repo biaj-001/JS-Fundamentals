@@ -1,5 +1,8 @@
-const argv =process.argv;
-const firstArg = argv[2];
-const secondArg = argv[3];
+const argument = process.argv[2];
+const number = parseInt(argument,10);
 
-console.log(`${firstArg} is ${secondArg}`);
+if(isNaN(number)){
+    console.log("Not a number");
+}else{
+    console.log(`My number : ${number}`);
+}
