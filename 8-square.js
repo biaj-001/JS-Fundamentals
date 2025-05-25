@@ -1,13 +1,12 @@
-const sizeStr =process.argv[2];
 
-const size = parseInt(sizeStr);
 
-if(isNaN(size)){
-    console.log("Missing size");
-}else {
-    const row ='x'.repeat(size);
+const size = parseInt(process.argv[2]);
 
-    for(let i=0;i<size;i++){
-        console.log(row);
-    }
+if (isNaN(size) || size < 1) {
+  console.log('Missing size');
+} else {
+  for (let i = 0; i < size; i++) {
+    console.log('X'.repeat(size));
+  }
 }
+
